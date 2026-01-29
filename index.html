@@ -52,6 +52,99 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-burger-btn" data-menu-open>
+          <svg class="header-burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mmns">
+            <nav class="mobile-menu-nav">
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link current" href="#studio">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mm-adres-social">
+              <address class="mobile-contacts">
+                <ul class="mobile-contacts-list">
+                  <li class="mobile-contacts-item">
+                    <a
+                      class="mobile-contacts-link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="mobile-contacts-item">
+                    <a class="mobile-contacts-link" href="tel:+110001111111"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <ul class="mobile-icons-list">
+                <li class="mobile-icons">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="mobile-icons-link"
+                    target="_blank"
+                  >
+                    <svg class="mobile-icons-social" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-icons">
+                  <a
+                    href="https://x.com/"
+                    class="mobile-icons-link"
+                    target="_blank"
+                  >
+                    <svg class="mobile-icons-social" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-icons">
+                  <a
+                    href="https://www.facebook.com/"
+                    class="mobile-icons-link"
+                    target="_blank"
+                  >
+                    <svg class="mobile-icons-social" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-icons">
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="mobile-icons-link"
+                    target="_blank"
+                  >
+                    <svg class="mobile-icons-social" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -661,17 +754,22 @@
               required
             />
             <label class="modal-checkbox-label" for="modal-checkbox">
-              <span class="modal-click"
-                ><svg class="modal-click-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-click"></use></svg></span
-              >I accept the terms and conditions of the
-              <a class="modal-check-link" href="">Privacy Policy</a></label
-            >
+              <span class="modal-click">
+                <svg class="modal-click-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </span>
+              <span class="modal-check-tl">
+                I accept the terms and conditions of the
+                <a class="modal-check-link" href="">Privacy Policy</a>
+              </span>
+            </label>
           </div>
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
