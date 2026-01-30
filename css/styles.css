@@ -307,12 +307,20 @@ a {
   padding: 72px 0;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-background.jpg);
+    url(../images/hero-bg-mobile-onex.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 100%;
   margin: 0 auto;
   background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-bg-mobile-twox.jpg);
+  }
 }
 
 .hero-container {
@@ -1115,7 +1123,11 @@ a {
 
   .hero {
     padding: 112px 0;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-background.jpg);
   }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -1195,6 +1207,14 @@ a {
     min-height: 584px;
 
     padding: 72px 24px 24px 24px;
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-bg-mobile-twox.jpg);
   }
 }
 
